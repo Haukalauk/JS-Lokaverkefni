@@ -1,0 +1,44 @@
+<!DOCTYPE>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+	<title>Verkefni</title>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  </head>
+  <body>
+  	<div class="introinfo">
+  		<h2>Vekjaraklukku völundarhús</h2>
+  		<h4> Stilltu vekjaraklukkuna</h4>
+  		<p>Notaðu örvarnar á lyklaborðinu til að færa græna hringinn yfir á gula X-ið til að slökkva á hljóðinu.</p>
+  	</div>
+  	<div class = "klukka"></div>
+  	
+  	<div id='alarmcontainer'>
+		<h3>Stilla vekjaraklukku</h3>
+		<label>
+			<div>
+			<select id='alarmhrs' ></select>
+			</div>
+		</label>
+		<label>
+			<div>
+			<select id='alarmmins' ></select>
+			</div>
+		</label>
+		<label>
+			<div>
+			<select id='alarmsecs' ></select>
+			</div>
+		</label>
+	</div>
+  	<div>
+			<div>
+				<button  id='setButton' onClick='alarmSet()'>Virkja Alarm</button>
+			</div>
+	</div>
+    <canvas id="GameBoardCanvas" width="400px" height="400px"></canvas>
+  	
+  </body>
+  <script src="js/main.js"></script>
+</html>
